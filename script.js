@@ -1,13 +1,19 @@
 window.addEventListener('load', () => {
   const modal = document.getElementById('welcomeModal');
   const closeBtn = document.getElementById('closeModal');
-
-  modal.classList.add('show');
+  const jaViu = localStorage.getItem('modalJaVisto');
+  
+  if (!jaViu) {
+    modal.classList.add('show');
+  }
 
   closeBtn.addEventListener('click', () => {
     modal.classList.remove('show');
-  });
+    modal.classList.add('show');
 });
+
+ localStorage.setItem('modalJaVisto', 'true');
+  });
 
 const toggleButton = document.getElementById('darkModeToggle');
 
