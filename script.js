@@ -9,7 +9,6 @@ window.addEventListener('load', () => {
 
   closeBtn.addEventListener('click', () => {
     modal.classList.remove('show');
-    modal.classList.add('show');
 });
 
  localStorage.setItem('modalJaVisto', 'true');
