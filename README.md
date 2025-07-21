@@ -11,6 +11,7 @@ O objetivo do projeto é revisar os fundamentos da web, praticar estruturação 
 
 - Layout responsivo com HTML e CSS
 - Modo claro e escuro com JavaScript
+- Outras funcionalidades com Interações JavaScript
 - Botão de download do currículo em PDF
 
 ## 👨‍💻 Autor

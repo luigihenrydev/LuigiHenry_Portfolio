@@ -19,3 +19,20 @@ const toggleButton = document.getElementById('darkModeToggle');
 toggleButton.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
+
+const btnTopo = document.getElementById('btnTopo');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    btnTopo.style.display = 'block';
+  } else {
+    btnTopo.style.display = 'none';
+  }
+});
+
+btnTopo.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
