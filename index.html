@@ -10,7 +10,7 @@
 <body>
   <div id="welcomeModal" class="modal">
     <div class="modal-content">
-      <p>👋 Seja bem-vindo ao meu portfólio!</p>
+      <p class="reveal">👋 Seja bem-vindo ao meu portfólio!</p>
       <button id="closeModal">Fechar</button>
     </div>
   </div>
@@ -18,31 +18,33 @@
       <h1>Luigi Henry</h1>
       <p>Desenvolvedor Full Stack em formação</p>
       <button id="darkModeToggle">🌙 Modo Escuro</button>
-      <button id="btnTopo" title="Voltar ao topo">⬆️</button>
   </header>
 
   <main>
-    <section>
+    <section class="reveal">
         <h2>Sobre Mim</h2>
         <p>Sou estudante de Análise e Desenvolvimento de Sistemas na UNA, atualmente indo para meu último semestre do curso. Sou apaixonado por tecnologia e estou em busca da minha primeira oportunidade na área.</p>
     </section>
 
     <section>
-            <h2>Projetos</h2>
-        <ul>
+            <h2 class="projeto reveal">Projetos</h2>
+        <ul class="reveal">
             <li><i class="fas fa-laptop-code"></i> Projeto 1 - Em breve</li>
             <li><i class="fas fa-laptop-code"></i> Projeto 2 - Em breve</li>
         </ul>
     </section>
 
-    <section>
+    <section class="reveal">
           <h2>Contato</h2>
           <a class="btn-cv" href="#">📄 Baixar CV</a>
     </section>
-    <footer>
+    <footer class="reveal">
           <p>&copy; 2025 - Luigi Henry</p>
     </footer>
 
+    <button id="btnTopo" title="Voltar ao topo">⬆️</button>
+
+<script src="https://unpkg.com/scrollreveal"></script>    
 <script src="script.js"></script>
 <div class="espaco"></div>
 </body>

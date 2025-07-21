@@ -36,3 +36,12 @@ btnTopo.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+ScrollReveal().reveal('.reveal', {
+  origin: 'bottom',
+  distance: '50px',
+  duration: 1200,
+  delay: 150,
+  easing: 'ease-in-out',
+  reset: false
+});
