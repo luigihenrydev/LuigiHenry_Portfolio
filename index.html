@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Portfólio do Luigi Henry</title>
-      <link rel="stylesheet" href="style.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfólio do Luigi Henry</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div id="welcomeModal" class="modal">
-    <div class="modal-content">
-      <p class="reveal">👋 Seja bem-vindo ao meu portfólio!</p>
-      <button id="closeModal">Fechar</button>
-    </div>
+      <div class="modal-content">
+        <p>👋 Seja bem-vindo ao meu portfólio!</p>
+        <button id="closeModal">Fechar</button>
+      </div>
   </div>
   <header>
-      <h1>Luigi Henry</h1>
-      <p>Desenvolvedor Full Stack em formação</p>
-      <button id="darkModeToggle">🌙 Modo Escuro</button>
+        <h1>Luigi Henry</h1>
+        <p>Desenvolvedor Full Stack em formação</p>
+        <button id="darkModeToggle">🌙 Modo Escuro</button>
   </header>
 
-  <main>
+<main>
     <section class="reveal">
-        <h2>Sobre Mim</h2>
-        <p>Sou estudante de Análise e Desenvolvimento de Sistemas na UNA, atualmente indo para meu último semestre do curso. Sou apaixonado por tecnologia e estou em busca da minha primeira oportunidade na área.</p>
+          <h2>Sobre Mim</h2>
+          <p>Sou estudante de Análise e Desenvolvimento de Sistemas na UNA, atualmente indo para meu último semestre do curso. Sou apaixonado por tecnologia e estou em busca da minha primeira oportunidade na área.</p>
+    </section>
+    
+    <section class="reveal habilidades">
+          <h2>Habilidades</h2>
+      <div class="skills">
+          <div><i class="fab fa-html5"></i><span>HTML5</span></div>
+          <div><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+          <div><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+          <div><i class="fab fa-git-alt"></i><span>Git</span></div>
+          <div><i class="fab fa-github"></i><span>GitHub</span></div>
+      </div>
+    </section>
+
+    <section class="reveal formacao">
+        <h2>Formação</h2>
+        <p>Análise e Desenvolvimento de Sistemas - UNA<br>Previsão de Conclusão: 2025.2</p>
     </section>
 
     <section>
-            <h2 class="projeto reveal">Projetos</h2>
-        <ul class="reveal">
-            <li><i class="fas fa-laptop-code"></i> Projeto 1 - Em breve</li>
-            <li><i class="fas fa-laptop-code"></i> Projeto 2 - Em breve</li>
-        </ul>
+              <h2 class="projeto reveal">Projetos</h2>
+          <ul class="reveal">
+              <li><i class="fas fa-laptop-code"></i> Projeto 1 - Em breve</li>
+              <li><i class="fas fa-laptop-code"></i> Projeto 2 - Em breve</li>
+          </ul>
     </section>
 
     <section class="reveal">
-          <h2>Contato</h2>
-          <a class="btn-cv" href="#">📄 Baixar CV</a>
+            <h2>Contato</h2>
+            <a class="btn-cv" href="luigi-henry-cv.pdf" download>📄 Baixar CV</a>
     </section>
     <footer class="reveal">
-          <p>&copy; 2025 - Luigi Henry</p>
+           <p>&copy; 2025 - Luigi Henry</p>
     </footer>
 
     <button id="btnTopo" title="Voltar ao topo">⬆️</button>
 
-<script src="https://unpkg.com/scrollreveal"></script>    
-<script src="script.js"></script>
-<div class="espaco"></div>
+    <script src="https://unpkg.com/scrollreveal"></script>    
+    <script src="script.js"></script>
 </body>
 </html>
