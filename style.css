@@ -51,7 +51,7 @@ body {
 .modal-content button {
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #2b5067;
+  background-color: #231957;
   color: white;
   border: none;
   border-radius: 8px;
@@ -75,13 +75,24 @@ header, main, footer {
 }
 
 header {
-  background-color: #2b5067;
+  background: radial-gradient(circle at center, #3b6e91 0%, #2a0a69 100%);
   color: white;
   padding: 40px 20px;
   text-align: center;
   border-radius: 0 0 10px 10px;
   width: 100%;
   max-width: 800px;
+}
+
+header {
+  max-width: 100%;
+  min-height: 300px;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 80px 40px;
+  }
 }
 
 section {
@@ -105,6 +116,7 @@ section h2 {
 .habilidades {
   text-align: center;
   padding: 40px 20px;
+  cursor: pointer;
 }
 
 .skills {
@@ -151,32 +163,86 @@ section h2 {
   color: #eee;
 }
 
+.dark-mode .formacao h2 {
+  color: #444;
+}
+
 .formacao {
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.formacao h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2b2b2b;
 }
 
 .formacao p {
   font-size: 18px;
   line-height: 1.6;
+  color: #444;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
+.formacao .destaque {
+  color: #231957;
+  font-weight: 600;
 }
 
-ul li {
-  margin: 8px 0;
+.projetos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.projeto-card {
+  width: 300px;
+  background-color: #fff;
+  color: #222;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.projeto-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.btn-projeto {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #231957;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-projeto:hover {
+  background-color: #3b6e91;
 }
 
 button {
-  background-color: #177e9d;
+  background-color: #231957;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -198,7 +264,7 @@ button:hover {
   right: 30px;
   z-index: 100;
   font-size: 18px;
-  background-color: #2b5067;
+  background-color: #231957;
   color: white;
   border: none;
   padding: 12px 16px;
@@ -234,7 +300,7 @@ a:hover {
 }
 
 .redes-sociais a {
-  color: #2b5067;
+  color: #231957;
   transition: color 0.3s;
 }
 
@@ -252,7 +318,7 @@ footer {
 a.btn-cv {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #2b5067;
+  background-color: #231957;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -277,4 +343,31 @@ a.btn-cv:hover {
   background-color: #333;
   color: #fff;
   border: 1px solid #555;
+}
+
+#darkModeToggle {
+  background: linear-gradient(135deg, #36247d, #3b6e91);
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#darkModeToggle:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #560bad, #3b6e91);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+}
+
+#darkModeToggle:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
