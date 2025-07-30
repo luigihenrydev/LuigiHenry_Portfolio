@@ -308,6 +308,14 @@ a:hover {
   color: #3b6e91;
 }
 
+body.dark-mode .social-icon:hover{
+    color: #3b6e91;
+}
+
+body.dark-mode .social-icon {
+  color: white;
+}
+
 footer {
     text-align: center;
     color: #999;
