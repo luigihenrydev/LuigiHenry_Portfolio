@@ -17,7 +17,7 @@ O objetivo do projeto é revisar os fundamentos da web, praticar estruturação 
 ## 👨‍💻 Autor
 
 Feito com dedicação por **Luigi Henry**  
-Estudante de Análise e Desenvolvimento de Sistemas (UNA)  
+Graduado em Análise e Desenvolvimento de Sistemas (UNA)  
 Buscando minha primeira oportunidade na área de programação!
 
 LINKEDIN -> https://www.linkedin.com/in/luigi-henry-c-araujo
